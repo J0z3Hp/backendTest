@@ -1,0 +1,5 @@
+// Ejecutar el servidor en nuestro computador
+const port = process.env.PORT   
+app.listen(port, () => {
+    console.log("El servidor se esta ejecutando coreectamente, en el puerto", port);
+});      
