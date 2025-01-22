@@ -8,4 +8,4 @@ export const usersRouter = express.Router();
 usersRouter.post("/crear", createUser);
 
 // Ruta para get
-usersRouter.get("/obtener",auth("admin"), showUsers);
+usersRouter.get("/obtener", showUsers);

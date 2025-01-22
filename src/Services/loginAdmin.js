@@ -32,11 +32,6 @@ export async function loginAdmin (request, response){
             name: adminFound.name,
             isAdmin: true
         }
-       
-       /* if(userFound.role === "admin"){
-            //Con esto le agreggo la propiedad isAdmin = true, al payload que creamos antes
-            payload.isAdmin = true;
-        }*/
 
         
         const token = await generateToken(payload);
@@ -45,7 +40,7 @@ export async function loginAdmin (request, response){
             mensaje:"inicio de sesión exitoso",
             tokenGenerado: token
         })
-   } catch (error) {
+    } catch (error) {
     return response.status(400).json({
         mensaje: "Hubo un error al iniciar sesión",
         error: error.message || error

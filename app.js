@@ -26,5 +26,5 @@ app.use("/administradores", adminRouter);
 app.use("/ordenes", orderRouter);
 app.use("/inicarSesionAdmin", loginAdminRouter);
 
-
+export default app;
 

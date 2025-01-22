@@ -7,6 +7,6 @@ export const adminRouter = express.Router();
 
 // Creación de ruta para las peticiones de admin
 
-adminRouter.post("/crear",auth("admin"), createAdmin);
-adminRouter.get("/obtener",auth("admin"), showAdmin);
+adminRouter.post("/crear", createAdmin);
+adminRouter.get("/obtener", showAdmin);
 

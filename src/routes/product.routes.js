@@ -8,7 +8,7 @@ export const productRouter = express.Router();
 productRouter.get("/obtener", getProduct);
 
 // Ruta para la peticion POST 
-productRouter.post("/crear", auth("admin"), postProduct);
+productRouter.post("/crear", postProduct);
 
 // Ruta para la peticion PUT 
 productRouter.put("/actualizar/:id",auth("admin"), putProductById);
